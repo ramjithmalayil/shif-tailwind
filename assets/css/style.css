@@ -1,0 +1,473 @@
+    @import url("../fonts/poppins/font-poppins.css");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        background: #fff;
+        font-size: 14px;
+        font-family: 'Poppins Light';
+        line-height: 22px;
+        color: #565656;
+        height: 100%;
+    }
+
+    input:focus,
+    button:focus,
+    a:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    h1 {
+        font-size: 55px;
+        margin-bottom: 35px;
+
+    }
+
+    h2 {
+        font-size: 45px;
+        margin-bottom: 33px;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px
+    }
+
+    a {
+        color: #5267f4;
+        text-decoration: none;
+
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    label {
+        color: #565656;
+        font-family: 'Poppins Medium';
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+        color: #B5BACF;
+    }
+
+    .d-inline-block {
+        display: inline-block;
+    }
+
+    .d-inline {
+        display: inline;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .d-grid {
+        display: grid;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .mt-30 {
+        margin-top: 30px;
+    }
+
+    .main {
+        height: 100%;
+    }
+
+    .btn {
+        cursor: pointer;
+    }
+
+    .btn-pink {
+        background-color: #FE08A2;
+        color: #fff;
+        font-family: 'Poppins Medium';
+        border: none;
+    }
+
+    .btn-blue {
+        background-color: #4460F1;
+        color: #fff;
+        font-family: 'Poppins Medium';
+        border: none;
+    }
+
+    .btn-sm {
+        padding: 8px 20px;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .btn-lg {
+        padding: 13px 15px;
+        border-radius: 30px;
+    }
+
+    .login-wrapper {
+        height: 100%;
+        align-items: stretch;
+    }
+
+    .login-banner {
+
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #4460F1 url(../img/login-bg.svg) bottom center no-repeat;
+        color: #fff;
+        border-radius: 0 40px 40px 0;
+        background-position: 52% 113%;
+        overflow: hidden;
+        position: relative;
+        background-size: 82%;
+    }
+
+    .login-banner::before {
+        content: "";
+        width: 105px;
+        height: 105px;
+        background: url(../img/shape1.svg) no-repeat;
+        position: absolute;
+        top: 19px;
+        left: 20px;
+        background-size: 100%;
+    }
+
+    .charactor-holder img {
+        margin-bottom: -20px;
+        transition: transform 0.5s ease;
+        animation: charactor-move 5s ease-in-out infinite;
+        transform-origin: bottom center;
+    }
+
+    @keyframes charactor-move {
+
+        0%,
+        100% {
+            transform: translateY(0) rotate(-0deg);
+        }
+
+        50% {
+            transform: translateY(-2px) rotate(-2deg);
+        }
+    }
+
+    .charactor-holder {
+        text-align: center;
+    }
+
+    .login-form {
+        width: 40%;
+        background-color: #fff;
+    }
+
+    .form-control {
+        width: 100%;
+        border: 1px solid #cad7e2;
+        height: 45px;
+        border-radius: 30px;
+        padding: 5px 20px;
+    }
+
+    .welcome-text {
+        width: 55%;
+        margin-left: 12%;
+        margin-top: 13%;
+    }
+
+    .f-weight-600 {
+
+        font-family: 'Poppins SemiBold';
+    }
+
+    .f-weight-400 {
+
+        font-family: 'Poppins Medium';
+    }
+
+    .f-weight-300 {
+
+        font-family: 'Poppins Regular';
+    }
+
+    .f-weight-100 {
+
+        font-family: 'Poppins Light';
+    }
+
+    .form-holder {
+        width: 60%;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    .align-items-end {
+        align-items: flex-end;
+    }
+
+    .form-holder h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #0C355B;
+    }
+
+    .brand-logo {
+        margin-bottom: 20px;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .f-size-sm {
+        font-size: 11px;
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        top: 2px;
+        margin-right: 4px;
+    }
+
+    .separator {
+        width: 100%;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .separator::before {
+        content: "";
+        width: 30%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        background-color: #DFDFDF;
+    }
+
+    .separator::after {
+        content: "";
+        width: 30%;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        background-color: #DFDFDF;
+    }
+
+    .shadow-blue {
+        box-shadow: 0px 10px 24px rgb(68 96 241 / 78%);
+        transition: all 300ms;
+    }
+
+    .shadow-blue:hover,
+    .shadow-blue:focus {
+        box-shadow: 0px 10px 24px rgb(46 74 220 / 78%);
+    }
+
+    .btn-lite-pink {
+        background-color: #ffe0f4;
+        color: #FE08A2;
+        font-family: 'Poppins Medium';
+        border: none;
+    }
+
+    .mob-only {
+        display: none;
+    }
+
+
+
+    @media screen and (max-width: 1150px) {
+        .welcome-text {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .login-banner::before {
+            display: none;
+        }
+
+        .login-banner img {
+            max-width: 270px;
+        }
+
+        .form-holder {
+            width: 78%;
+        }
+
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .login-banner {
+            width: 50%;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 23px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            line-height: 21px;
+            font-size: 13px;
+        }
+
+        .login-form {
+            width: 50%;
+            padding: 30px;
+        }
+
+        .form-holder {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .welcome-text {
+            width: 100%;
+            margin-left: 0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .login-banner {
+            width: 100%;
+            flex-direction: column;
+            background: #4460F1 url(../img/login-bg.svg) bottom center no-repeat;
+            border-radius: 0;
+            overflow: visible;
+        }
+
+        .login-wrapper {
+            flex-direction: column;
+        }
+
+        .welcome-text {
+            margin-top: 5%;
+        }
+
+        .login-banner {
+            background-position: 52% 113%;
+            background-size: 65%;
+            border-radius: 0 0 40px 40px;
+        }
+
+        .charactor-holder {
+            overflow: hidden;
+        }
+
+        .login-banner img {
+            max-width: 205px;
+        }
+
+        .login-form {
+            width: 100%;
+        }
+
+        .mob-only {
+            display: block;
+        }
+
+        .mob-hide {
+            display: none;
+        }
+
+        .brand-logo img {
+            max-width: 164px;
+            background: #fff;
+            padding: 28px 15px 20px 15px;
+            border-radius: 0 0 35px 35px;
+        }
+
+        .welcome-text {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .brand-logo {
+            margin-bottom: 35px;
+        }
+
+        .welcome-text p {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .form-holder h4 {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .welcome-text p {
+            width: 95%;
+        }
+    }
